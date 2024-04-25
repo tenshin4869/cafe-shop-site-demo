@@ -1,0 +1,25 @@
+.sideBySide {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin: var(--space-md) 0 var(--space-lg);
+}
+
+@media (min-width: 768px) {
+    .sideBySide {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: var(--space-md);
+        margin: var(--space-md) 0 var(--space-lg);
+    }
+}
+
+@media (min-width: 768px) {
+    .main {
+        width: 768px;
+    }
+    .sidebar {
+    width: 240px;
+}
+}
+
